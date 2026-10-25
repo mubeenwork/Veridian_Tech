@@ -14,7 +14,6 @@ import TechStack from "@/components/sections/TechStack";
 import Portfolio from "@/components/sections/Portfolio";
 import WhyUs from "@/components/sections/WhyUs";
 import Contact from "@/components/sections/Contact";
-import Pricing from "@/components/sections/Pricing";
 
 const queryClient = new QueryClient();
 
@@ -55,7 +54,6 @@ const App = () => (
             <TechStack />
             <Portfolio />
             <WhyUs />
-            <Pricing />
             <Contact />
           </main>
           <Footer />

@@ -11,7 +11,6 @@ const navLinks = [
   { label: "About", target: "about", offset: -80 },
   { label: "Services", target: "services", offset: -80 },
   { label: "Portfolio", target: "portfolio", offset: -80 },
-  { label: "Pricing", target: "pricing", offset: -80 },
   { label: "Contact", target: "contact", offset: -80 },
 ];
 
@@ -49,13 +48,12 @@ const Navbar = () => {
       <div className="border-b border-border dark:border-primary/20 bg-background/60 dark:bg-background/40 backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
           {/* Logo */}
-          <button onClick={() => scrollTo("home", 0)} className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-lg">
-              V
-            </div>
-            <span className="font-heading font-semibold text-lg text-foreground">
-              Veridian<span className="text-veridian-glow">Tech</span>
-            </span>
+          <button onClick={() => scrollTo("home", 0)} className="flex items-center">
+            <img
+              src={theme === "dark" ? "/images/logo-dark.png" : "/images/logo-light.png"}
+              alt="Veridian Tech"
+              className="h-20 w-auto object-contain"
+            />
           </button>
 
           {/* Desktop nav */}
